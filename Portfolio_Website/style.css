@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    color: #1e293b;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+/* TEXT */
+.hero-text {
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 45px;
+    color: #1e3a8a;
+}
+
+.subtitle {
+    color: #475569;
+}
+
+.desc {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    background: #6366f1;
+    padding: 10px 18px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn.outline {
+    background: transparent;
+    border: 2px solid #6366f1;
+    color: #6366f1;
+}
+
+/* IMAGE */
+.hero-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* CARDS */
+.card-section {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.card {
+    background: rgba(255,255,255,0.7);
+    padding: 25px;
+    width: 70%;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+/* SKILLS */
+.skills span {
+    display: inline-block;
+    background: #6366f1;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+/* PROJECTS */
+.projects {
+    display: flex;
+    gap: 20px;
+}
+
+.project {
+    background: rgba(99,102,241,0.1);
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+}
